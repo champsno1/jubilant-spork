@@ -1,0 +1,39 @@
+/* Expert Profile Styling */
+.expert-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: background-color 0.3s ease;
+}
+
+.expert-item:hover {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* Image Styling for Expert */
+.expert-item img {
+    border-radius: 50%;
+    width: 120px;  /* Adjust based on desired size */
+    height: 120px;  /* Make it circular */
+    margin-right: 20px;
+    object-fit: cover; /* Ensures the image fits within the circle */
+    max-width: 100%; /* Makes sure it scales correctly */
+}
+
+/* Expert's Name */
+.expert-item h4 {
+    font-size: 22px;
+    margin: 0;
+    color: #FF9933;
+}
+
+/* Expert's Details (Expertise, Bio, Contact) */
+.expert-item p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: white;
+}

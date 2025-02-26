@@ -1,0 +1,213 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://source.unsplash.com/1600x900/?indian-army,defense') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #FF9933, #FFFFFF, #138808);
+    color: black;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+header::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 120px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/1/17/Ashoka_Chakra.svg') no-repeat center;
+    background-size: contain;
+    margin: 20px auto;
+}
+
+/* Content Section */
+.content {
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.7);
+    margin: 50px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.content ul {
+    list-style-type: none;
+}
+
+.content ul li {
+    margin: 10px 0;
+}
+
+.content a {
+    color: #FF9933;
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Form (Registration Page) */
+form {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 60%;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+form input[type="text"], form input[type="email"], form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+}
+
+form input[type="submit"] {
+    background-color: #FF9933;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #FF6600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .content {
+        width: 90%;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+
+/* Default styling for all pages */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* Home Page */
+body.home {
+    background: url('https://source.unsplash.com/1600x900/?ncc,army') no-repeat center center fixed;
+}
+
+/* Forum Page */
+body.forum {
+    background: url('https://source.unsplash.com/1600x900/?discussion,military') no-repeat center center fixed;
+}
+
+/* Resources Page */
+body.resources {
+    background: url('https://source.unsplash.com/1600x900/?books,study,military') no-repeat center center fixed;
+}
+
+/* Experts Page */
+body.experts {
+    background: url('https://source.unsplash.com/1600x900/?military-officer,mentor') no-repeat center center fixed;
+}
+
+/* Events Page */
+body.events {
+    background: url('https://source.unsplash.com/1600x900/?ncc-event,army-rally') no-repeat center center fixed;
+}
+
+/* Chat Page */
+body.chat {
+    background: url('https://source.unsplash.com/1600x900/?technology,communication') no-repeat center center fixed;
+}
+
+/* Blog Page */
+body.blog {
+    background: url('https://source.unsplash.com/1600x900/?journalism,defense') no-repeat center center fixed;
+}
+
+/* Registration Page */
+body.registration {
+    background: url('https://source.unsplash.com/1600x900/?sign-up,login') no-repeat center center fixed;
+}

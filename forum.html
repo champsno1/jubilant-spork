@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum - NCC & Defense Aspirants</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="forum.html">Forum</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="experts.html">Experts</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="chat.html">Chat</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="registration.html">Registration</a></li>
+        </ul>
+    </nav>
+    
+    <header>
+        <h1>Defense Blogs and Articles</h1>
+        <p>Explore insightful blogs and articles to enhance your knowledge about defense, NCC, and other related topics.</p>
+    </header>
+
+    <div class="content">
+        <h2>Featured Blogs and Articles</h2>
+        <p>Click on the links below to read insightful articles and blogs to help you in your defense journey.</p>
+
+        <ul id="blogsList">
+            <!-- Blog links will be added dynamically -->
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 NCC Defense Forum. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const blogs = [
+            {
+                title: 'Top 7 Military Habits for Defence Aspirants',
+                url: 'https://ssbcrackexams.com/top-7-military-habits-for-defence-aspirants/'
+            },
+            {
+                title: 'How to Prepare for NCC Camps Effectively',
+                url: 'https://www.quora.com/How-can-I-prepare-myself-for-NCC-National-Camps-both-physically-and-mentally-and-knowledge-wise'
+            },
+            {
+                title: 'A Guide to Joining the Indian Army',
+                url: 'https://164.100.158.23/how-to-join.htm'
+            },
+            {
+                title: 'NCC: A Pathway to Becoming an Officer',
+                url: 'https://www.majorkalshiclasses.com/news/How-to-Become-an-Officer-Through-NCC'
+            }
+        ];
+
+        const blogsList = document.getElementById('blogsList');
+
+        blogs.forEach(blog => {
+            const listItem = document.createElement('li');
+            const blogLink = document.createElement('a');
+            blogLink.href = blog.url;
+            blogLink.textContent = blog.title;
+            blogLink.target = "_blank"; // Open in a new tab
+            listItem.appendChild(blogLink);
+            blogsList.appendChild(listItem);
+        });
+    </script>
+</body>
+</html>
